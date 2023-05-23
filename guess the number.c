@@ -5,7 +5,7 @@ int main() {
     srand(time(NULL));//khơi tạo seed cho hàm rand() bằng thời gian hiện tại,se ramdom mỗi lần chạy program.
     int guess;
     int random;
-     random= rand ()%100+1 ;//hàm rand() sinh ra số ngẫu nhiên.
+     random= rand ()%100+1 ;//hàm rand() sinh ra số ngẫu nhiên.%100 sẽ là 0-99 và +1 để tăng lên 1-100.
     printf("Guess the number (1-100): ");
     scanf("%d",&guess);//nhập số guess
     do {
